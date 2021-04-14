@@ -80,6 +80,41 @@
 						<li>Tên file: <strong>MSSV-xx.zip/rar</strong>, xx là điểm tự đánh giá từ 01-10. Ví dụ: 1515151-07.zip</li>
 					</ul>
 				</section>
+				<section>
+					<h3>Upload file</h3>
+					<pre><code data-trim>
+						npm install --save multer
+					</code></pre>
+					<pre><code data-trim>
+						const multer  = require('multer');
+						const upload = multer({ dest: 'uploads/' });
+
+						app.post('/profile', upload.single('avatar'), function (req, res, next) {
+							// req.file is the `avatar` file
+							// req.body will hold the text fields, if there were any
+						});
+					</code></pre>
+				</section>
+				<section>
+					<h3>Bài tập nhóm - BTN01</h3>
+					<ul>
+						<li>Làm theo nhóm đồ án</li>
+						<li>Tìm hiểu các web framework cho Node.js</li>
+						<li>Yêu cầu: Báo cáo Word/PDF và slide trình bày PowerPoint</li>
+						<li>Nộp bài trên Web môn học trước <strong>27/04/2021 09:00PM</strong></li>
+						<li>Tên file: <strong>MSSV1-MSSV2-MSSV3-MSSV4-xx.zip/rar</strong>, xx là điểm tự đánh giá từ 01-10.</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Bài tập về nhà - BTCN07</h3>
+					<ul>
+						<li>Làm tiếp BTCN07 với chức năng cập nhật hình ảnh cá nhân</li>
+						<li>Dữ liệu lưu trữ trong <strong>Postgres</strong></li>
+						<li>Nộp link trang Web trên Heroku trong tập tin url.txt và mã nguồn</li>
+						<li>Nộp bài trên Web môn học trước <strong>13/04/2021 09:00PM</strong></li>
+						<li>Tên file: <strong>MSSV-xx.zip/rar</strong>, xx là điểm tự đánh giá từ 01-10. Ví dụ: 1515151-07.zip</li>
+					</ul>
+				</section>
 			</div>
 		</div>
 
